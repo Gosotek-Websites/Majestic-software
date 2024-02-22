@@ -4,32 +4,39 @@ import Image from "next/image";
 import about from "./../../../public/assets/about.png";
 
 const About = () => {
-  return (
-    <div className={styles.container} id="about">
-      <Image
-        src={about}
-        className={styles.img}
-        width={2000}
-        style={{ height: "auto" }}
-        placeholder="blur"
-      />
+	return (
+		<div className={styles.container} id="about">
+			<div>
+				<Image
+					src={about}
+					className={styles.img}
+					width={500}
+					style={{ height: "auto" }}
+					placeholder="blur"
+				/>
+			</div>
 
-      <div className={styles.info}>
-        <div className={styles.title1}>ABOUT US</div>
-        <div className={styles.title2}>We stand ready to protect you.</div>
-        <div className={styles.desc}>
-          Majestic Security offers a comprehensive range of advanced security
-          and surveillance solutions to meet the ever-changing requirements of
-          different industries. At present, we are serving many different
-          verticals comprising defence, government, hotels, hospitals,
-          educational institutes, homes, infrastructure, and transportation
-          among others. Being a major surveillance system brand globally, we
-          bring efficient, reliable, scalable, and integrated solutions to our
-          customers.
-        </div>
-      </div>
-    </div>
-  );
+			<div className={styles.info}>
+				<div className={styles.title1}>ABOUT US</div>
+				<div className={styles.title2}>
+					We help you embark on a tech journey empowered by our
+					seamless solutions.
+				</div>
+				<div className={styles.desc}>
+					Welcome to Majestic Systems and Softwares, where technology
+					meets simplicity. We take pride in offering a curated
+					selection of computer systems, printers, accessories,
+					software, and networking solutions. Our focus is on
+					providing reliable, user-friendly products that seamlessly
+					integrate into your daily life. With a commitment to
+					customer satisfaction, we strive to make your technology
+					experience straightforward and enjoyable. Explore our range
+					and discover the convenience of modern technology with
+					Majestic Systems and Softwares.
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default About;

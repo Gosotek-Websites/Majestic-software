@@ -10,37 +10,47 @@ import Testimonials from "@/components/testimonials/Testimonials";
 import ShopBtn from "@/components/shopBtn/ShopBtn";
 import SecurityForm from "@/components/securityForm/SecurityForm";
 import Shop from "@/components/shop/Shop";
+import Gallery from "@/components/gallery/Gallery";
+import Video from "@/components/video/Video";
 
 export default function Home() {
-  return (
-    <div className={styles.container}>
-      <div className={styles.heroSection}>
-        <Image src={hero} className={styles.heroImg} fill placeholder="blur" />
-        <div className={styles.hero}>
-          <div className={styles.heroInfo}>
-            <div className={styles.heroTitle}>
-              Indulge in the assurance of cost-effective and proficient security
-              solutions.
-            </div>
-            <div className={styles.heroDesc}>
-              We deliver top-notch security services, meticulously trained to
-              cater to your requirements and support you in challenging
-              situations.
-            </div>
-          </div>
-          <Form />
-        </div>
-      </div>
+	return (
+		<div className={styles.container}>
+			<div className={styles.heroSection}>
+				<Image
+					src={hero}
+					className={styles.heroImg}
+					fill
+					placeholder="blur"
+				/>
+				<div className={styles.hero}>
+					<div className={styles.heroInfo}>
+						<div className={styles.heroTitle}>
+							Immerse in the excellence of powerful, sophisticated
+							systems and software solutions.
+						</div>
+						<div className={styles.heroDesc}>
+							We provide unparalleled system solutions and
+							softwares, meticulously designed to meet your needs
+							and offer steadfast support in demanding situations.
+						</div>
+					</div>
+					<Form />
+				</div>
+			</div>
 
-      <About />
-      <Products />
-      {/* <ShopBtn /> */}
-      <Solutions />
-      <Choose />
-      <Testimonials />
-      <SecurityForm />
-      <br /><br />
-      <Shop />
-    </div>
-  );
+			<About />
+			<Products />
+			{/* <ShopBtn /> */}
+			{/* <Solutions /> */}
+			<Choose />
+			<Gallery />
+			{/* <SecurityForm /> */}
+			<br />
+			<br />
+			<Shop />
+			<Video />
+			<Testimonials />
+		</div>
+	);
 }
