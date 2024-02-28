@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import hero from "./../../public/assets/hero.png";
+import hero from "./../../public/assets/hero.jpg";
 import Form from "@/components/form/Form";
 import About from "@/components/about/About";
 import Products from "@/components/products/Products";
