@@ -24,6 +24,7 @@ const Video = () => {
 							url={item.link}
 							controls={true}
 							width="100%"
+							height="auto"
 						/>
 						<p>{item.title}</p>
 					</div>

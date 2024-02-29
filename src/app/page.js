@@ -17,22 +17,25 @@ export default function Home() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.heroSection}>
-				<Image
+				{/* <Image
 					src={hero}
 					className={styles.heroImg}
 					fill
 					placeholder="blur"
-				/>
+				/> */}
 				<div className={styles.hero}>
-					<div className={styles.heroInfo}>
-						<div className={styles.heroTitle}>
-							Immerse in the excellence of powerful, sophisticated
-							systems and software solutions.
-						</div>
-						<div className={styles.heroDesc}>
-							We provide unparalleled system solutions and
-							softwares, meticulously designed to meet your needs
-							and offer steadfast support in demanding situations.
+					<div className={styles.heroInfoWrapper}>
+						<div className={styles.heroInfo}>
+							<div className={styles.heroTitle}>
+								Immerse in the excellence of powerful,
+								sophisticated systems and software solutions.
+							</div>
+							<div className={styles.heroDesc}>
+								We provide unparalleled system solutions and
+								softwares, meticulously designed to meet your
+								needs and offer steadfast support in demanding
+								situations.
+							</div>
 						</div>
 					</div>
 					<Form />
