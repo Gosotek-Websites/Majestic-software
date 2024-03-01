@@ -2,15 +2,15 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.3vw;
-	padding: 1.2vw 1.8vw;
-	/* width: 26vw; */
-	width: 30%;
-	background-color: #d9d9d9;
+	padding: 1.2vw 5.5vw;
+	justify-content: center;
+	width: 40%;
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 .head {
-	font-size: 1.2vw;
-	color: #000;
+	font-size: 1.8vw;
+	color: #fff;
 	font-weight: 600;
 	line-height: normal;
 	text-align: center;
@@ -19,7 +19,7 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	gap: 1vw;
+	gap: 1.4vw;
 }
 
 .param {
@@ -29,7 +29,7 @@
 }
 
 .label {
-	color: #383838;
+	color: #e0e0e0;
 	font-size: 1vw;
 	font-style: normal;
 	font-weight: 500;
@@ -37,11 +37,27 @@
 }
 
 .input {
-	display: block;
-	font-size: 1vw;
-	height: 2.2vw;
-	padding-left: 0.6vw;
+	height: 2.8vw;
+	color: #fff;
+	font-size: 1.2vw;
+	padding-left: 1.25vw;
 	border: none;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+}
+
+.input::placeholder {
+	color: #fff;
+	font-size: 1.2vw;
+	opacity: 1;
+}
+
+.input::-ms-input-placeholder {
+	color: #fff;
+	font-size: 1.2vw;
+}
+
+.input:focus {
 	outline: none;
 }
 
@@ -50,13 +66,29 @@
 }
 
 .message {
-	display: block;
-	font-size: 1vw;
-	height: 5vw;
-	padding: 0.6vw;
+	font-size: 1.2vw;
+	color: #fff;
+	height: 6vw;
+	padding: 0.6vw 1.25vw;
 	border: none;
-	outline: none;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
 	resize: none;
+}
+
+.message::placeholder {
+	color: #fff;
+	font-size: 1.2vw;
+	opacity: 1;
+}
+
+.message::-ms-input-placeholder {
+	color: #fff;
+	font-size: 1.2vw;
+}
+
+.message:focus {
+	outline: none;
 }
 
 .messageMob {
@@ -64,14 +96,17 @@
 }
 
 .btn {
-	margin-top: 0.5vw;
-	height: 2.2vw;
-	background-color: #315471;
-	font-size: 1vw;
+	margin-top: 1.4vw;
+	height: 2.8vw;
+	background-color: #006ac1;
+	font-size: 1.2vw;
 	color: #fff;
-	text-transform: uppercase;
 	cursor: pointer;
 	border: none;
+}
+
+.btn:hover {
+	background-color: #00509a;
 }
 
 .btnDisabled {
@@ -81,14 +116,14 @@
 
 @media screen and (max-width: 464px) {
 	.container {
-		gap: 2vw;
-		padding: 3vw 7vw 5vw 7vw;
-		width: 90%;
+		gap: 4vw;
+		padding: 7vw 8vw 9vw 8vw;
+		width: 100%;
 	}
 
 	.head {
 		font-size: 6vw;
-		color: #000;
+		color: #fff;
 		font-weight: 600;
 		line-height: normal;
 		text-align: center;
@@ -97,7 +132,7 @@
 	.form {
 		display: flex;
 		flex-direction: column;
-		gap: 2vw;
+		gap: 5vw;
 	}
 
 	.label {
@@ -111,9 +146,26 @@
 	.inputMob {
 		display: block;
 		font-size: 3.5vw;
+		color: #fff;
 		height: 7vw;
 		padding-left: 1.5vw;
 		border: none;
+		border-bottom: 1px solid #fff;
+		background-color: transparent;
+	}
+
+	.inputMob::placeholder {
+		color: #fff;
+		font-size: 3.5vw;
+		opacity: 1;
+	}
+
+	.inputMob::-ms-input-placeholder {
+		color: #fff;
+		font-size: 3.5vw;
+	}
+
+	.inputMob:focus {
 		outline: none;
 	}
 
@@ -124,11 +176,28 @@
 	.messageMob {
 		display: block;
 		font-size: 3.5vw;
+		color: #fff;
 		height: 15vw;
 		padding: 1.5vw;
 		border: none;
-		outline: none;
+		border-bottom: 1px solid #fff;
+		background-color: transparent;
 		resize: none;
+	}
+
+	.messageMob::placeholder {
+		color: #fff;
+		font-size: 3.5vw;
+		opacity: 1;
+	}
+
+	.messageMob::-ms-input-placeholder {
+		color: #fff;
+		font-size: 3.5vw;
+	}
+
+	.messageMob:focus {
+		outline: none;
 	}
 
 	.btn {

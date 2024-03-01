@@ -29,7 +29,7 @@ const Footer = () => {
 				</div>
 
 				<div className={styles.social}>
-					<Link href="https://www.linkedin.com/" target="_blank">
+					<Link href="/">
 						<Image
 							src={li}
 							width={20}
@@ -37,7 +37,7 @@ const Footer = () => {
 							alt="img"
 						/>
 					</Link>
-					<Link href="https://www.instagram.com/" target="_blank">
+					<Link href="/">
 						<Image
 							src={ig}
 							width={20}
